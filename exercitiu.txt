@@ -1,0 +1,24 @@
+Creaza o clasa Animal, care are un atribut "weight", care este integer, initializat in constructor cu valoarea 1.
+Creaza o clasa Dog care mosteneste din Animal, si mai primeste un atribut "name", si un atribut "affection", affection poate lua valoarea de la 1 la 10.
+Creaza si o clasa Cat, care mosteneste din Animal, cu aceleasi atribute.
+
+Pentru mostenire, puteti in constructor sa scrieti:
+class Child(Parent):
+    def __init__(self, value, extra):
+        super().__init__(value)  # call Parent constructor
+        self.extra = extra
+
+Creaza doua liste, in care cream 5 Dogs, si in a doua lista 5 Cats.
+Da valori diferite pentru name, weight, si affection la fiecare Dog si Cat.
+
+Creaza o functie gather_animals(dogs, cats) care primeste cele doua liste, si returneaza o lista care arata in acest fel: [Dog, Cat, Dog, Cat, Dog, ....], deci primul obiect o sa fie Dog, al doilea Cat, si asa mai departe pana ai adaugat toate animalele in acea lista.
+
+Creaza o functie sort_animals(animals), care primeste o lista de animale mix, si le sorteaza dupa affection, de la mic la mare.
+Functia sort_animals() va primi lista de animale creata de gather_animals().
+
+Creaza o functie filter_by_weight(animals, weight_limit), care primeste ca argument o lista de animale, si returneaza o lista cu toate animalele care au greutatea >= de weight_limit.
+Fa in asa fel incat aceasta functie sa primeasca toate animalele folosind sort_animals().
+
+Foloseste toate functiile de mai sus.
+
+END TASK.
